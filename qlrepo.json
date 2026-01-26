@@ -1,0 +1,45 @@
+{
+  "name": "qinglong-scripts",
+  "author": "todrfu",
+  "repo": "https://github.com/todrfu/qinglong-scripts",
+  "branch": "main",
+  "whitelist": [
+    ".*\\.py$"
+  ],
+  "blacklist": [
+    "notify\\.py$"
+  ],
+  "dependence": [
+    "notify.py",
+    "requirements.txt"
+  ],
+  "scripts": [
+    {
+      "name": "中免海南",
+      "file": "zhongmian_hainan.py",
+      "cron": "30 9 * * *",
+      "env": [
+        "ZHONGMIAN_TOKEN"
+      ],
+      "description": "中免海南商城签到脚本"
+    },
+    {
+      "name": "通义万相",
+      "file": "tongyiwanxiang.py",
+      "cron": "30 9 * * *",
+      "env": [
+        "TONGYI_COOKIE"
+      ],
+      "description": "通义万相签到脚本"
+    },
+    {
+      "name": "IDKey签到",
+      "file": "idkey_checkin.py",
+      "cron": "0 9 * * *",
+      "env": [
+        "IDKEY_TOKEN"
+      ],
+      "description": "one.idkey.cc 签到脚本"
+    }
+  ]
+}

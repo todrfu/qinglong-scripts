@@ -5,7 +5,7 @@ name: 中免海南
 cron: 30 9 * * *
 
 变量：
-ZHONGMIAN_CK: 必填，多账号使用 @ 隔开，如 'token1@token2'
+ZHONGMIAN_TOKEN: 必填，多账号使用 @ 隔开，如 'token1@token2'
 
 捉 https://service.cdfhnms.com 域名下请求，token在header中
 """
